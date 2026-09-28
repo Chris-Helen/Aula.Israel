@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, Hotel Velaris" />
+    <meta name="description" content="Projeto da prova de desenvolvimento Front-End" />
+    <title>Hotel Velaris - Reservar</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../img/Logo.png" width="150" height="155" alt="Logo">
+        </figure>
+    </header>
+
+    <nav>
+        <a href="inicio.html"><em>Início</em></a> |
+        <a href="reservar.html"><em>Reservar</em></a> |
+        <a href="cadastro.html"><em>Cadastro</em></a> |
+    </nav>
+    <hr>
+
+    <main>
+        <h1>Faça sua reserva</h1>
+
+        <section>
+            <h3>Ouça uma música enquanto faz a reserva</h3>
+            <audio controls>
+                <source src="../audio/Melim - Meu Abrigo.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section>
+            <h3>Período da hospedagem</h3>
+
+            <fieldset>
+                <legend>Datas</legend>
+
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </fieldset>
+        </section>
+
+        <section>
+            <h3>Nosso melhor quarto</h3>
+            <video width="640" height="360" controls poster="../img/Fachada do Hotel.jpg">
+                <source src="../video/Melhor quarto.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <h3>Escolha sua acomodação</h3>
+
+            <article>
+                <h3>Quarto Luxuoso</h3>
+
+                <figure>
+                    <img src="../img/Quarto luxuoso.jpg" width="300" alt="Quarto Luxuoso do Hotel Velaris">
+                    <figcaption>Quarto Luxuoso</figcaption>
+                </figure>
+
+                <p>Até 2 hóspedes, cama de king size, televisão, closet, frigobar banheiro duplo e ar-condicionado.</p>
+                <p><mark>R$ 550,00 por diária</mark></p>
+
+                <label>
+                    <input type="checkbox" name="quarto" value="luxuoso"> Reservar quarto luxuoso
+                </label>
+            </article>
+            <br>
+
+            <article>
+                <h3>Quarto Simples</h3>
+
+                <figure>
+                    <img src="../img/Quarto simples.jpg" width="300" alt="Quarto Simples do Hotel Velaris">
+                    <figcaption>Quarto Simples</figcaption>
+                </figure>
+
+                <p>Até 3 hóspedes, mini guarda-roupa e ar-condicionado</p>
+                <p><mark>R$ 320,00 por diária</mark></p>
+
+                <label>
+                    <input type="checkbox" name="quarto" value="simples"> Reservar quarto simples
+                </label>
+            </article>
+        </section>
+        </main>
+        <br><br>
+
+        <footer>
+            <small>&copy; 2026 Hotel Velaris</small>
+        </footer>
+</body>
+</html>

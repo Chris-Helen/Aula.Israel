@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, Hotel Velaris" />
+    <meta name="description" content="Projeto da prova de desenvolvimento Front-End" />
+    <title>Hotel Velaris - Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hotel Velaris</h1>
+
+        <nav aria-label="Navegação principal">
+            <a href="inicio.html">Início</a> |
+            <a href="reservar.html">Reservar</a> |
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Crie sua conta</h2>
+
+            <p>Cadastre-se para facilitar suas reservas no Hotel Velaris.</p>
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label>Nome completo:</label> 
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label>E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de acesso</legend>
+
+                <label>Senha:</label>
+                <input type="password" id="senha" name="senha" minlength="8" required>
+
+                <label>Confirme sua senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" minlength="8" required>
+
+            </fieldset>
+            <br>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </section>
+    </main>
+    <br><br>
+
+    <footer>
+        <a href="reservar.html"><em>Faça sua reserva</em></a>
+        <br><br>
+        <p>&copy; 2026 Velaris Hotel.</p>
+    </footer>
+
+</body>
+</html>
