@@ -1,0 +1,41 @@
+body {
+    max-width: 100%;
+    height:auto;
+    margin: 0;
+}
+
+#header {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}
+
+#icone_carrinho {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#menu {
+    float: left;
+    width: 20%;
+    height: 490px;
+    background-color: #FFF0F2;
+}
+
+#main {
+    margin-left: 20%;
+    height: 450px;
+    padding: 20px;
+}
+
+#footer {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 7px;
+    text-align: center;
+}
