@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Helen" />
+    <meta name="keywords" content="html, web, loja de roupa, moda feminina" />
+    <meta name="description" content="Projeto final de desenvolvimento Front-End" />
+    <title>Lumi - Moda Feminina</title>
+
+    <style>
+        #header {
+            background-color: #F7DCDC;
+            color: #E04D68;
+            padding: 1px;
+            text-align: center;
+            position: relative;
+        }
+
+        #icone_carrinho {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 25px;
+            text-decoration: none;
+            color: #E04D68;
+        }
+
+        #menu {
+            float: left;
+            width: 20%;
+            height: 620px;
+            background-color: #FFF0F2;
+        }
+
+        #coluna_direita {
+            float: right;
+            width: 20%;
+            height: 620px;
+            background-color: #FFF0F2;
+        }
+
+        #main {
+            float: left;
+            width: 60%;
+            min-height: 550px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #footer {
+            background-color: #F7DCDC;
+            color: #E04D68;
+            padding: 7px;
+            text-align: center;
+            clear: both;
+        }
+
+        /* Organização das duas partes */
+        #detalhes {
+            display: grid;
+            grid-template-columns: 450px 1fr;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        /* Imagem do produto */
+        #imagem {
+            background-color: #F7DCDC;
+            padding: 10px;
+            border-radius: 10px;
+            width: 350px;
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        /* Avaliação */
+        #avaliacao {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 8px;
+        }
+
+        /* Organização das estrelas */
+        #estrelas {
+            color: #F5B301;
+            font-size: 18px;
+        }
+
+        /* Organização da quantidade */
+        #quantidade {
+            color: #777;
+            font-size: 12px;
+        }
+
+        /* Preço */
+        #preco {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        /* Descrição */
+        #descricao {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Organização dos amanhos */
+        #tamanhos {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* Botões dos tamanhos */
+        #tamanho {
+            background-color: white;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        /* Botão do carrinho */
+        #carrinho {
+            display: block;
+            width: 350px;
+            background-color: #D75A72;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Logo -->
+    <header>
+        <div id="header">
+            <img src="../img/logo_completa.png" alt="Logo LUMI" width="200">
+            <a href="carrinho.html" id="icone_carrinho">🛍️</a>
+        </div>
+    </header>
+
+    <!-- Menu de páginas -->
+    <aside>
+        <div id="menu">
+            <ul>
+                <li><a href="novidades.html">Novidades</a></li><br>
+                <li><a href="vestidos.html">Vestidos</a></li><br>
+                <li><a href="blusas.html">Blusas</a></li><br>
+                <li><a href="calcas.html">Calças</a></li><br>
+                <li><a href="saias.html">Saias</a></li><br>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Conteúdo da página -->
+    <main>
+        <div id="main">
+
+            <div id="detalhes">
+
+                <!-- Imagem do produto -->
+                <section>
+                    <img id="imagem" src="../img/saia_6.png" alt="Saia verde militar midi com fenda pequena do lado">
+                </section>
+
+                <!-- Informações do produto -->
+                <section>
+                    <div id="informacoes">
+                        <h2>Saia verde militar midi</h2>
+
+                        <!-- Avaliação -->
+                        <div id="avaliacao">
+                            <div id="estrelas">
+                                <span>★★★★★</span>
+                            </div>
+
+                            <div id="quantidade">
+                                <span>(1.300)</span>
+                            </div>
+                        </div>
+
+                        <!-- Preço -->
+                        <div id="preco">
+                            <p>R$ 100,90</p>
+                        </div>
+
+                        <!-- Descrição -->
+                        <div id="descricao">
+                            <p>Saia verde militar midi com fenda pequena do lado</p>
+                        </div>
+
+                        <!-- Seleção de tamanhos -->
+                        <h3>Tamanho:</h3>
+
+                        <div id="tamanhos">
+                            <button id="tamanho">PP</button>
+                            <button id="tamanho">P</button>
+                            <button id="tamanho">M</button>
+                            <button id="tamanho">G</button>
+                            <button id="tamanho">GG</button>
+                        </div>
+
+                        <!-- Botão do carrinho -->
+                        <button id="carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+    <aside>
+        <div id="coluna_direita"></div>
+    </aside>
+
+    <!-- Final da página -->
+    <footer>
+        <div id="footer">
+            <small>&copy; 2026 LUMI - Moda Feminina</small>
+        </div>
+    </footer>
+</body>
+
+</html>
