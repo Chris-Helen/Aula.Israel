@@ -1,0 +1,104 @@
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Cabeçalho rosa */
+#header {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 1px;
+    text-align: center;
+}
+
+/* Conteúdo central */
+#main {
+    float: left;
+    width: 60%;
+    min-height: 620px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    background-color: #F7DCDC;
+    color: #E04D68;
+    padding: 7px;
+    text-align: center;
+    clear: both; /* Coloca o rodapé abaixo das três colunas */
+}
+
+/* Área de confirmação */
+#confirmacao {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+/* Ícone de confirmação */
+#icone_sucesso {
+    width: 80px;
+    height: 80px;
+    background-color: #E8F7ED;
+    color: #299653;
+    border-radius: 50%;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+}
+
+/* Título principal */
+#confirmacao h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Mensagem de agradecimento */
+#confirmacao h2 {
+    color: #D75A72;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Texto de confirmação */
+#confirmacao p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Botão para continuar comprando */
+#voltar_loja {
+    display: inline-block;
+    background-color: #D75A72;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#coluna_direita {
+    float: right;
+    width: 20%;
+    height: 620px;
+    background-color: #FFF0F2;
+}
+
+#coluna_esquerda {
+    float: left;
+    width: 20%;
+    height: 620px;
+    background-color: #FFF0F2;
+}

@@ -1,7 +1,6 @@
 /* Configuração geral da página */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #F7DCDC;
 }
 
@@ -34,7 +33,6 @@ body {
     padding: 35px;
     border-radius: 10px; /* Arredonda os cantos */
     text-align: center;
-    font-family: 'Modern Serif', serif;
 }
 
 /* Logo do painel rosa */
@@ -117,8 +115,13 @@ body {
     border: none; /* Remove a borda padrão */
     padding: 15px;
     border-radius: 6px; /* Arredonda os cantos */
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer; /* Mostra o cursor de mão sobre o botão */
+    font-weight: bold;
+    display: block; /* Faz o elemento se comportar como um bloco, ocupando uma linha própria */
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+    text-align: center;
+    text-decoration: none; /* Tira o sublinhado dos links */
 }
 
 /* Texto para ir pro login */
