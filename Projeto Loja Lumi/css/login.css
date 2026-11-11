@@ -4,7 +4,7 @@ body {
     background-color: #F7DCDC;
 }
 
-/* Área principal */
+/* Conteúdo principal */
 #main {
     display: flex; /* Organiza o conteúdo */
     justify-content: center; /* Centraliza a caixa horizontalmente */
@@ -67,8 +67,8 @@ body {
 /* Título de boas-vindas */
 #area_login h1 {
     font-size: 30px;
-    margin: 0 0 10px; /* Remove a margem superior e adiciona 10px abaixo */
-    color: #222;
+    margin: 0 0 10px; /* Tira a margem superior e adiciona 10px abaixo */
+    color: black;
 }
 
 /* Descrição do formulário */
@@ -104,15 +104,15 @@ body {
 
 /* Efeito contorno rosa */
 #area_login form > input:focus {
-    outline: 2px solid #D75A72; /* Contorno rosa ao clicar no campo */
+    outline: 2px solid #E04D68; /* Contorno rosa ao clicar no campo */
 }
 
 /* Botão Entrar */
 #botao_entrar {
     width: 100%;
-    background-color: #D75A72;
+    background-color: #E04D68;
     color: white;
-    border: none; /* Remove a borda padrão */
+    border: none; /* Tira a borda padrão */
     padding: 15px;
     border-radius: 6px; /* Arredonda os cantos */
     font-size: 20px;
@@ -121,7 +121,7 @@ body {
     display: block; /* Faz o elemento se comportar como um bloco, ocupando uma linha própria */
     box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
     text-align: center;
-    text-decoration: none; /* Tira o sublinhado dos links */
+    text-decoration: none; /* Tira o sublinhado do link */
 }
 
 /* Texto para ir pro cadastro */
@@ -134,7 +134,7 @@ body {
 
 /* Link Criar conta */
 #link_cadastro a {
-    color: #D75A72;
-    text-decoration: none; /* Remove o sublinhado */
+    color: #E04D68;
+    text-decoration: none; /* Tira o sublinhado do link*/
     font-weight: bold;
 }
