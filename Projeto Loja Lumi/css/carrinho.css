@@ -1,0 +1,181 @@
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#header {
+    background-color: #F7DCDC;
+    color: #D75A72;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}
+
+#menu {
+    float: left;
+    width: 20%;
+    height: 870px;
+    background-color: #FFF0F2;
+}
+
+#main {
+    margin-left: 20%;
+    height: 830px;
+    padding: 20px;
+}
+
+#footer {
+    background-color: #F7DCDC;
+    color: #D75A72;
+    padding: 7px;
+    text-align: center;
+}
+
+/* Organização dos produtos */
+#titulos,
+.produto {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1fr 1fr 40px;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Cabeçalho da tabela */
+#titulos {
+    background-color: #FFF0F2;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Cada produto */
+.produto {
+    padding: 15px;
+    border-bottom: 1px solid #DDD;
+}
+
+/* Imagem e nome */
+.informacoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.informacoes img {
+    width: 65px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.informacoes h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tamanho do produto */
+.informacoes p {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Quantidade */
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade button {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Remover produto */
+.remover {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Organização da parte inferior */
+#final_carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Continuar comprando */
+#continuar {
+    align-self: flex-start;
+    color: #D75A72;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Resumo do pedido */
+#resumo {
+    width: 70%;
+    max-width: none;
+    background-color: #FFF0F2;
+    padding: 25px;
+    border: 2px solid #D75A72;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    margin: 0 auto;
+}
+
+/* Título do resumo */
+#resumo h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Subtotal e frete */
+.linha_resumo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+    font-size: 14px;
+}
+
+/* Frete */
+#frete {
+    color: #D75A72;
+    font-weight: bold;
+}
+
+/* Total */
+#total {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 22px;
+    border-top: 2px solid #D75A72;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Botão finalizar compra */
+#finalizar {
+    width: 100%;
+    background-color: #D75A72;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
