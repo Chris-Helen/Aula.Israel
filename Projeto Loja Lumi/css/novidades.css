@@ -54,7 +54,7 @@ body {
 
 /* Organização geral dos produtos */
 #geral {
-    display: grid; /* Organiza os produtos */
+    display: grid; /* Organiza os produtos em colunas */
     grid-template-columns: repeat(4, 1fr); /* Cria quatro colunas iguais */
     gap: 20px; /* Define a distância entre os produtos */
     margin-top: 25px;
