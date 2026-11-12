@@ -113,7 +113,7 @@ body {
     background-color: #FFF0F2;
     padding: 25px;
     border: 2px solid #E04D68; /* Define a borda rosa */
-    border-radius: 12px;
+    border-radius: 12px; /* Arredonda os cantos */
     box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
 }
 
@@ -145,8 +145,8 @@ body {
     justify-content: space-between; /* Separa os textos nas extremidades */
     gap: 15px; /* Cria distância entre eles */
     font-size: 22px;
-    border-top: 2px solid #E04D68; /* Define a borda rosa */
-    padding-top: 15px; /* Cria a linha rosa acima do total */
+    border-top: 2px solid #E04D68; /* Cria a linha rosa acima do total */
+    padding-top: 15px; /* Adiciona espaço acima do conteúdo */
     margin-top: 20px;
     font-weight: bold;
 }

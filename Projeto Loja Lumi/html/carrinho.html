@@ -14,153 +14,133 @@
 
 <body>
     <!-- Logo -->
-    <header>
-        <div id="header">
-            <img src="../img/logo_completa.png" alt="Logo LUMI" width="200">
-        </div>
+    <header id="header">
+        <img src="../img/logo_completa.png" alt="Logo LUMI" width="200">
     </header>
 
     <!-- Menu de páginas -->
-    <aside>
-        <div id="menu">
-            <ul>
-                <li><a href="novidades.html">Novidades</a></li><br>
-                <li><a href="vestidos.html">Vestidos</a></li><br>
-                <li><a href="blusas.html">Blusas</a></li><br>
-                <li><a href="calcas.html">Calças</a></li><br>
-                <li><a href="saias.html">Saias</a></li><br>
-            </ul>
-        </div>
+    <aside id="menu">
+        <ul>
+            <li><a href="novidades.html">Novidades</a></li><br>
+            <li><a href="vestidos.html">Vestidos</a></li><br>
+            <li><a href="blusas.html">Blusas</a></li><br>
+            <li><a href="calcas.html">Calças</a></li><br>
+            <li><a href="saias.html">Saias</a></li><br>
+        </ul>
     </aside>
 
     <!-- Conteúdo da página -->
-    <main>
-        <div id="main">
+    <main id="main">
+        <h2>🛍️ Meu carrinho</h2>
 
-            <h2>🛍️ Meu carrinho</h2>
+        <!-- Títulos das colunas -->
+        <div id="titulos">
+            <span>Produto</span>
+            <span>Quantidade</span>
+            <span>Preço</span>
+            <span>Subtotal</span>
+        </div>
 
-            <!-- Títulos das colunas -->
-            <div id="titulos">
-                <span>Produto</span>
-                <span>Quantidade</span>
-                <span>Preço</span>
-                <span>Subtotal</span>
+        <!-- Produto 1 -->
+        <div class="produto">
+            <div class="informacoes">
+                <img src="../img/vestido_1.png" alt="Vestido Midi Elegante">
+
+                <div>
+                    <h4>Vestido midi vermelho marsala de alças finas</h4>
+                    <p>Tamanho: M</p>
+                </div>
             </div>
 
-            <!-- Produto 1 -->
-            <div class="produto">
-
-                <div class="informacoes">
-                    <img src="../img/vestido_1.png" alt="Vestido Midi Elegante">
-
-                    <div>
-                        <h4>Vestido midi vermelho marsala de alças finas</h4>
-                        <p>Tamanho: M</p>
-                    </div>
-                </div>
-
-                <div class="quantidade">
-                    <button type="button">-</button>
-                    <span>2</span>
-                    <button type="button">+</button>
-                </div>
-
-                <p>R$ 115,50</p>
-                <p>R$ 231,00</p>
-
-                <button type="button" class="remover">🗑️</button>
-
+            <div class="quantidade">
+                <button type="button">-</button>
+                <span>2</span>
+                <button type="button">+</button>
             </div>
 
-            <!-- Produto 2 -->
-            <div class="produto">
+            <p>R$ 115,50</p> <!-- Preço unidade -->
+            <p>R$ 231,00</p> <!-- Subtotal -->
 
-                <div class="informacoes">
-                    <img src="../img/blusa_1.png" alt="Blusa Branca com Babado">
+            <button type="button" class="remover">🗑️</button>
+        </div>
 
-                    <div>
-                        <h4>Blusa Branca com Babado</h4>
-                        <p>Tamanho: P</p>
-                    </div>
+        <!-- Produto 2 -->
+        <div class="produto">
+            <div class="informacoes">
+                <img src="../img/blusa_1.png" alt="Blusa Branca com Babado">
+
+                <div>
+                    <h4>Blusa Branca com Babado</h4>
+                    <p>Tamanho: P</p>
                 </div>
-
-                <div class="quantidade">
-                    <button type="button">-</button>
-                    <span>1</span>
-                    <button type="button">+</button>
-                </div>
-
-                <p>R$ 79,90</p>
-                <p>R$ 79,90</p>
-
-                <button type="button" class="remover">🗑️</button>
-
             </div>
 
-            <!-- Produto 3 -->
-            <div class="produto">
-
-                <div class="informacoes">
-                    <img src="../img/calca_1.png" alt="Calça Alfaiataria">
-
-                    <div>
-                        <h4>Calça terracota pantalona</h4>
-                        <p>Tamanho: G</p>
-                    </div>
-                </div>
-
-                <div class="quantidade">
-                    <button type="button">-</button>
-                    <span>1</span>
-                    <button type="button">+</button>
-                </div>
-
-                <p>R$ 110,90</p>
-                <p>R$ 110,90</p>
-
-                <button type="button" class="remover">🗑️</button>
-
+            <div class="quantidade">
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
             </div>
 
-            <!-- Parte inferior do carrinho -->
-            <div id="final_carrinho">
+            <p>R$ 79,90</p> <!-- Preço unidade -->
+            <p>R$ 79,90</p> <!-- Subtotal -->
 
-                <a href="novidades.html" id="continuar">← Continuar comprando</a>
+            <button type="button" class="remover">🗑️</button>
+        </div>
 
-                <!-- Resumo do pedido -->
-                <div id="resumo">
+        <!-- Produto 3 -->
+        <div class="produto">
+            <div class="informacoes">
+                <img src="../img/calca_1.png" alt="Calça Alfaiataria">
 
-                    <h3>Resumo do pedido</h3>
-
-                    <div class="linha_resumo">
-                        <span>Subtotal</span>
-                        <span>R$ 421,80</span>
-                    </div>
-
-                    <div class="linha_resumo">
-                        <span>Frete</span>
-                        <span id="frete">Grátis</span>
-                    </div>
-
-                    <div id="total">
-                        <strong>Total</strong>
-                        <strong>R$ 421,80</strong>
-                    </div>
-
-                    <a href="pagamento.html" id="finalizar">Finalizar compra</a>
-
+                <div>
+                    <h4>Calça terracota pantalona</h4>
+                    <p>Tamanho: G</p>
                 </div>
-
             </div>
 
+            <div class="quantidade">
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+            </div>
+
+            <p>R$ 110,90</p> <!-- Preço unidade -->
+            <p>R$ 110,90</p> <!-- Subtotal -->
+
+            <button type="button" class="remover">🗑️</button>
+        </div>
+
+        <!-- Parte inferior do carrinho -->
+        <div id="final_carrinho"> <!-- Agrupa o link de voltar e o resumo -->
+            <a href="novidades.html" id="continuar">← Continuar comprando</a>
+
+            <!-- Resumo do pedido -->
+            <div id="resumo">
+                <h3>Resumo do pedido</h3>
+
+                <div class="linha_resumo">
+                    <span>Subtotal</span>
+                    <span>R$ 421,80</span>
+                </div>
+
+                <div class="linha_resumo">
+                    <span>Frete</span>
+                    <span id="frete">Grátis</span>
+                </div>
+
+                <div id="total">
+                    <strong>Total</strong>
+                    <strong>R$ 421,80</strong>
+                </div>
+
+                <a href="pagamento.html" id="finalizar">Finalizar compra</a>
+            </div>
         </div>
     </main>
 
     <!-- Final da página -->
-    <footer>
-        <div id="footer">
-            <small>&copy; 2026 LUMI - Moda Feminina</small>
-        </div>
+    <footer id="footer">
+        <small>&copy; 2026 LUMI - Moda Feminina</small>
     </footer>
 </body>
 

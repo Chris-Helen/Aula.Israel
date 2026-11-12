@@ -1,10 +1,11 @@
+/* Configuração geral da página */
 body {
     max-width: 100%;
     height: auto;
     margin: 0;
 }
 
-/* Cabeçalho rosa */
+/* Cabeçalho da loja */
 #header {
     background-color: #F7DCDC;
     color: #E04D68;
@@ -12,18 +13,19 @@ body {
     text-align: center;
 }
 
-/* Conteúdo central */
+/* Conteúdo principal */
 #main {
     float: left;
     width: 60%;
     min-height: 620px;
     padding: 30px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+    box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
+    display: flex; /* Organiza o conteúdo */
+    justify-content: center; /* Centraliza a confirmação horizontalmente */
     align-items: center;
 }
 
+/* Rodapé da página */
 #footer {
     background-color: #F7DCDC;
     color: #E04D68;
@@ -45,13 +47,13 @@ body {
     height: 80px;
     background-color: #E8F7ED;
     color: #299653;
-    border-radius: 50%;
+    border-radius: 50%; /* Transforma a caixa em um círculo */
     font-size: 48px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
+    display: flex; /* Organiza o símbolo */
+    justify-content: center; /* Centraliza o símbolo horizontalmente */
     align-items: center;
-    margin: 0 auto 25px;
+    margin: 0 auto 25px; /* Centraliza o círculo e cria espaço abaixo */
 }
 
 /* Título principal */
@@ -63,7 +65,7 @@ body {
 
 /* Mensagem de agradecimento */
 #confirmacao h2 {
-    color: #D75A72;
+    color: #E04D68;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 20px;
@@ -73,31 +75,33 @@ body {
 #confirmacao p {
     color: #777;
     font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.7; /* Define o espaçamento entre as linhas */
     margin-bottom: 15px;
 }
 
 /* Botão para continuar comprando */
 #voltar_loja {
-    display: inline-block;
-    background-color: #D75A72;
+    display: inline-block; /* Define o espaço acima do botão */
+    background-color: #E04D68;
     color: white;
-    padding: 15px 35px;
-    border-radius: 8px;
-    text-decoration: none;
+    padding: 15px 35px; /* Define o espaço interno vertical e horizontal */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    text-decoration: none; /* Tira o sublinhado do link */
     font-size: 20px;
     margin-top: 25px;
 }
 
+/* Coluna rosa direita */
 #coluna_direita {
-    float: right;
+    float: right; /* Coloca a coluna na direita */
     width: 20%;
     height: 620px;
     background-color: #FFF0F2;
 }
 
+/* Coluna rosa esquerda */
 #coluna_esquerda {
-    float: left;
+    float: left; /* Posiciona a coluna na esquerda */
     width: 20%;
     height: 620px;
     background-color: #FFF0F2;
