@@ -80,7 +80,7 @@ body {
 
 /* Organização dos campos */
 #area_cadastro form {
-    display: flex; /* Ativa o Flexbox(organização de cada campo) */
+    display: flex; /* organização de cada campo */
     flex-direction: column; /* Organiza os campos verticalmente */
 }
 
@@ -95,7 +95,7 @@ body {
 #area_cadastro form > input {
     padding: 13px;
     margin-bottom: 17px;
-    border: 1px solid #DDD; /* Define borda cinza de 1 pixel */
+    border: 1px solid #DDD; /* Define borda cinza de */
     border-radius: 6px; /* Arredonda os cantos */
     font-size: 14px;
     box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
@@ -118,7 +118,7 @@ body {
     font-size: 20px;
     cursor: pointer; /* Mostra o cursor de mão sobre o botão */
     font-weight: bold;
-    display: block; /* Faz o elemento se comportar como um bloco, ocupando uma linha própria */
+    display: block; /* Faz o botão ocupar sua própria linha */
     box-sizing: border-box; /* Organiza o layout impedindo que o padding e a border aumentem as dimensões */
     text-align: center;
     text-decoration: none; /* Tira o sublinhado do link */
